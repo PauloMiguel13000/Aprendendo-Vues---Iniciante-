@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula1</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+<div v-if="usuario.nome == 'miguel'">
+    Id:{{usuario.id}}, <br>
+    Nome:{{usuario.nome}}, <br>
+Profissao: {{usuario.profissao}}
+</div>
+<div v-else> nenhum usuario com id = 1</div>
+</div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+var app = new Vue({
+el: "#app",
+data: {
+    titulo:"Alula one",
+    usuario:{
+        id:2,
+        nome:"miguel",
+        profissao:"ator"
+    }
+}
+
+});
+</script>
+
+</body>
+</html>
